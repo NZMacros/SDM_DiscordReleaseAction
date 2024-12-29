@@ -1,0 +1,21 @@
+name: 'Release to Discord'
+author: 'SP'
+description: 'Send any release in NZMacros/SkibiDefenseMacro directly to the Skibi Defense Macro Discord server'
+inputs:
+  token:
+    description: 'Discord Bot Token'
+    required: true
+  channel:
+    description: 'Announcement Channel ID for sending and publishing release info'
+    required: true
+  color:
+    description: 'Embed color (decimal) (default: 10552316)'
+    required: false
+    default: 10552316
+  author:
+    description: 'Image/GIF URL to show next to "New Skibi Defense Macro Release!" (default: sdm_logo)'
+    required: false
+    default: 'https://raw.githubusercontent.com/NZMacros/GitHub/main/skibi_defense_macro/img_assets/icons/sdm_logo_darktheme.svg'
+runs:
+  using: 'node20'
+  main: 'index.js'
