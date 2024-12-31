@@ -1,5 +1,5 @@
 name: 'Release to Discord'
-author: 'SP'
+author: 'NegativeZero01'
 description: 'Send any release in NZMacros/SkibiDefenseMacro directly to the Skibi Defense Macro Discord server'
 inputs:
   token:
